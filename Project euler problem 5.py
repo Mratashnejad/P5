@@ -6,8 +6,10 @@
 # کوچکترین عدد مثبتی که به طور مساوی بر همه اعداد 1 تا 20 بخش پذیر است کدام است؟
 
 
-i = 0 
-j = i +1
-for i in range(1,10):
-    while(j/i == 0)
-        
+
+def get_divs(n):
+    dives = [x for x in range(1,20) if n % x == 0]
+    print (dives)
+    return dives
+
+get_divs(999999999999999999)
